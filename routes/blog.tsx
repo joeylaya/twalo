@@ -24,7 +24,7 @@ export default function Blog(props: PageProps) {
     <BaseLayout seo={seo}>
       <div class="flex flex-wrap justify-center items-start gap-12">
         {postPreviews.map((postPreview: PostPreview, index: number) => (
-          <a href={"http://localhost:8000/blog/"+postPreview.slug}>
+          <a href={"/blog/"+postPreview.slug}>
             <PostPreview {...postPreview} new={index == 0 ? true : false} />
           </a>
         ))}

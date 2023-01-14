@@ -78,7 +78,7 @@ export function Footer() {
     <div class="bg-gray-200 h-60 mt-8 p-8 flex flex-col justify-between z-40">
       <div class="flex justify-between">
         <div class="w-32 md:w-48 flex flex-col gap-4">
-          <a href="http://localhost:8000/">
+          <a href="/">
             <img src="/logo.svg" alt="" />
           </a>
           <p class="font-semibold">Educational Consulting for Youth Liberation</p>
@@ -86,12 +86,12 @@ export function Footer() {
         <div class="flex gap-16">
           {siteMap.map((group) => (
             <div class="flex flex-col gap-4">
-              <a href={`http://localhost:8000/${group.header.slug}`}>
+              <a href={`/${group.header.slug}`}>
                 <p class="font-semibold text-sm">{group.header.name}</p>
               </a>
               <div class="flex flex-col gap-1">
                 {group.list.map((link) => (
-                  <a href={`http://localhost:8000/${link.slug}`}>
+                  <a href={`/${link.slug}`}>
                     <p class="text-sm">{link.name}</p>
                   </a>
                 ))}
