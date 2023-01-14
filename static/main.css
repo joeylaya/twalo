@@ -1,0 +1,22 @@
+body {
+  background-color: #f3f4f6;
+}
+
+h1, h2 {
+  font-family:"Josefin Sans";
+}
+
+button > p {
+  font-family:"Josefin Sans";
+}
+
+ol {
+  display: block;
+  list-style-type: decimal;
+  padding: 0 2rem;
+}
+
+li {
+  display: list-item;
+  padding: 0.5rem 0;
+}
