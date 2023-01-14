@@ -1,4 +1,5 @@
 import { Head } from "$fresh/runtime.ts";
+import { JSX } from "https://esm.sh/v99/preact@10.11.0/src/index";
 import { Footer } from "./Footer.tsx";
 import { NavBar } from "./NavBar.tsx";
 
@@ -8,7 +9,7 @@ interface BaseLayoutProps {
     description: string;
     keywords: string[];
   };
-  children: any;
+  children: JSX.Element;
 }
 
 export default function BaseLayout(props: BaseLayoutProps) {
