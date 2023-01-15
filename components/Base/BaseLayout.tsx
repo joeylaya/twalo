@@ -1,5 +1,5 @@
 import { Head } from "$fresh/runtime.ts";
-import { JSX } from "https://esm.sh/v99/preact@10.11.0/src/index";
+import { JSX } from "preact/src/index";
 import { Footer } from "./Footer.tsx";
 import { NavBar } from "./NavBar.tsx";
 

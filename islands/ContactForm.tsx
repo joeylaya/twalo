@@ -1,10 +1,8 @@
-import { useEffect, useState } from "preact/hooks"
+import { useState } from "preact/hooks"
 import { BaseButton } from "../components/Base/BaseButton.tsx"
 import { BaseSelector } from "../components/Base/BaseSelector.tsx"
-import { env } from "../env.ts"
 import { convertArrayToList } from "../utils/list.ts"
 import { convertToSentenceCase } from "../utils/sentenceCase.ts"
-import { sendinblue } from "../sendinblue.ts"
 import { NewMessageEmailParams } from "../routes/api/newMessageEmail.ts"
 
 type Service = "training" | "advising" | "mediation" | "curation" 
@@ -167,7 +165,6 @@ export default function ContactForm() {
   }
 
   const sendNewMessageEmail = async (data: ContactFormData) => {
-    console.log("sending")
     const params: NewMessageEmailParams = {
       services: convertArrayToList(data.services),
       message: data.message,

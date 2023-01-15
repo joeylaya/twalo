@@ -12,7 +12,6 @@ export interface NewMessageEmailParams {
 export const handler: Handlers = {
   async POST(req) {
     const params: NewMessageEmailParams = await req.json()
-
     const apiKey =   Deno.env.get("CONTENT_API")!
 
     const sendSmtpEmail = {

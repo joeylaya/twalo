@@ -1,4 +1,4 @@
-import { gql } from "../deps.ts"
+import { gql } from "graphql_request/mod.ts"
 
 export const GET_RECENT_POST_PREVIEW = gql`
   query Posts {

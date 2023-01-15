@@ -624,6 +624,7 @@
     "https://esm.sh/preact@10.11.0": "e888b244446037c56f1881173fb51d1f5fa7aae5599e6c5154619346a6a5094e",
     "https://esm.sh/preact@10.11.0/hooks": "2b8ec155eb8b87501663f074acff1d55a9114fa7d88f0b39da06c940af1ff736",
     "https://esm.sh/preact@10.11.0/jsx-runtime": "5c123264f19799ab243211132dded45f6d42d594b5c78dd585f947d07bf20eae",
+    "https://esm.sh/preact@10.11.0/src/index": "5b6911e0efad7b5822a924ce74b288d26123b0bc815abeecd93dd7ca55c3aef9",
     "https://esm.sh/sib-api-v3-typescript@2.2.2": "75d0a6af8994e976aa7a4fc8518a197c082ce8a24f2558c3143272a30f8795b9",
     "https://esm.sh/stable/preact@10.11.0/deno/hooks.js": "48b7674c1f0c2a0f8a0f758b786f5bc15ba0f7a4f3a356ecc783848f1e4a1c55",
     "https://esm.sh/stable/preact@10.11.0/deno/jsx-runtime.js": "b5a8e96758c20b5dea05802c6f6962b8a95bfdbd476eb4ea51cf3234f6e09271",
@@ -914,7 +915,6 @@
     "https://esm.sh/v102/uuid@3.4.0/deno/lib/bytesToUuid.js": "0d9edbb70413fc4986b8c3ed0c130f67a032311cbcb9d000df223169b5748415",
     "https://esm.sh/v102/uuid@3.4.0/deno/lib/rng.js": "bfa7151db9754a51acfc4b52fe1c14b1759c0bc68b415325d6ae69e8657601fb",
     "https://esm.sh/v102/uuid@3.4.0/deno/v4.js": "074549ffb3b892b67690ed6b3652db453fff97f5dfc16f61fe3ce73a8b67d73b",
-    "https://esm.sh/v102/verror@1.10.0/deno/verror.js": "460e4bd8eabfd5c9fba35a86a8bb797cafb9d36d0201382fb0494439926b629c",
-    "https://esm.sh/v99/preact@10.11.0/src/index": "5b6911e0efad7b5822a924ce74b288d26123b0bc815abeecd93dd7ca55c3aef9"
+    "https://esm.sh/v102/verror@1.10.0/deno/verror.js": "460e4bd8eabfd5c9fba35a86a8bb797cafb9d36d0201382fb0494439926b629c"
   }
 }

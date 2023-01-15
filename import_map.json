@@ -8,6 +8,9 @@
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.0.1",
     "twind": "https://esm.sh/twind@0.16.17",
     "twind/": "https://esm.sh/twind@0.16.17/",
-    "sib-api-v3-typescript": "https://esm.sh/sib-api-v3-typescript@2.2.2"
+    "sib-api-v3-typescript": "https://esm.sh/sib-api-v3-typescript@2.2.2",
+    "sib-api-v3-typescript/": "https://esm.sh/sib-api-v3-typescript@2.2.2/",
+    "graphql-request": "https://deno.land/x/graphql_request@v4.1.0",
+    "graphql_request/": "https://deno.land/x/graphql_request@v4.1.0/"
   }
 }
