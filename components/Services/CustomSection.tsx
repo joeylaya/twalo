@@ -11,7 +11,7 @@ export function CustomSection() {
           <BaseButton style="primary" text="Contact us" />
         </div>
       </div>
-      <img class="w-1/3" src="/illustrations/teaching.svg" alt="" />
+      <img class="md:w-1/3" src="/illustrations/teaching.svg" alt="" />
     </section>
   )
 }

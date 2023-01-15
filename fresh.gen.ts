@@ -4,28 +4,32 @@
 
 import config from "./deno.json" assert { type: "json" };
 import * as $0 from "./routes/about.tsx";
-import * as $1 from "./routes/blog.tsx";
-import * as $2 from "./routes/blog/[slug].tsx";
-import * as $3 from "./routes/contact.tsx";
-import * as $4 from "./routes/index.tsx";
-import * as $5 from "./routes/services.tsx";
-import * as $6 from "./routes/services/training.tsx";
-import * as $$0 from "./islands/ContactForm.tsx";
-import * as $$1 from "./islands/NavToggle.tsx";
+import * as $1 from "./routes/api/newMessageEmail.ts";
+import * as $2 from "./routes/blog.tsx";
+import * as $3 from "./routes/blog/[slug].tsx";
+import * as $4 from "./routes/contact.tsx";
+import * as $5 from "./routes/index.tsx";
+import * as $6 from "./routes/services.tsx";
+import * as $7 from "./routes/services/training.tsx";
+import * as $$0 from "./islands/ChatBot.tsx";
+import * as $$1 from "./islands/ContactForm.tsx";
+import * as $$2 from "./islands/NavToggle.tsx";
 
 const manifest = {
   routes: {
     "./routes/about.tsx": $0,
-    "./routes/blog.tsx": $1,
-    "./routes/blog/[slug].tsx": $2,
-    "./routes/contact.tsx": $3,
-    "./routes/index.tsx": $4,
-    "./routes/services.tsx": $5,
-    "./routes/services/training.tsx": $6,
+    "./routes/api/newMessageEmail.ts": $1,
+    "./routes/blog.tsx": $2,
+    "./routes/blog/[slug].tsx": $3,
+    "./routes/contact.tsx": $4,
+    "./routes/index.tsx": $5,
+    "./routes/services.tsx": $6,
+    "./routes/services/training.tsx": $7,
   },
   islands: {
-    "./islands/ContactForm.tsx": $$0,
-    "./islands/NavToggle.tsx": $$1,
+    "./islands/ChatBot.tsx": $$0,
+    "./islands/ContactForm.tsx": $$1,
+    "./islands/NavToggle.tsx": $$2,
   },
   baseUrl: import.meta.url,
   config,

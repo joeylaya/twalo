@@ -11,19 +11,19 @@ const services = [
   },
   {
     name: "Advising",
-    description: "description",
+    description: "We coach educators, organizational leaders, and nonprofit administrators and advise on strategies to increase capacity to work toward liberation and social change.",
     illustration: "learning",
     order: "standard"
   },
   {
     name: "Mediation",
-    description: "description",
+    description: "We guide the creation of impactful responses, mediate conflict, and analyze strategies for change post “call-out” letters and during DEI crises.",
     illustration: "team",
     order: "reverse"
   },
   {
     name: "Curation",
-    description: "description",
+    description: "We curate courses or a list of resources, tips, and tools to create a safe and affirming environment.",
     illustration: "studying",
     order: "standard"
   },
@@ -39,9 +39,11 @@ export default function Services() {
 
   return (
     <BaseLayout seo={seo}>
-      {services.map((service) => (
-        <ServiceSection {...service} />
-      ))}
+      <div class="flex flex-col gap-16">
+        {services.map((service) => (
+          <ServiceSection {...service} />
+        ))}
+      </div>
     </BaseLayout>
   );
 }

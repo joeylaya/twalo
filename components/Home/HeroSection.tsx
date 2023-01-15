@@ -15,11 +15,11 @@ export function HeroSection() {
           actualize—liberatory environments for youth and students.
         </p>
         <div class="flex flex-col md:(flex-row) items-center gap-2">
-          <BaseButton style="primary" text="View our services" />
-          <BaseButton style="secondary" text="Contact us" />
+          <BaseButton style="primary" text="View our services" href="services" />
+          <BaseButton style="secondary" text="Contact us" href="contact" />
         </div>
       </div>
-      <img class="md:(w-1/2 -mr-32 -mt-32)" src="/illustrations/happy-student.svg" alt="" />
+      <img class="md:(w-1/2 -mt-32)" src="/illustrations/happy-student.svg" alt="" />
     </header>
   )
 }

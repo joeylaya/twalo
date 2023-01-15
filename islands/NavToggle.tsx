@@ -7,7 +7,7 @@ export default function NavToggle() {
   return (
     <div class="flex flex-col items-end gap-4 self-start">
       <button class="h-8 flex items-center md:hidden" onClick={() => toggleNav(!navExpanded)}>
-        Nav
+        <img src="/icons/nav.svg" alt="" />
       </button>
       {navExpanded && <NavSection display="mobile" />}
       <NavSection display="desktop" />

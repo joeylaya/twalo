@@ -21,9 +21,9 @@ export default function Post(props: PageProps) {
   return (
     <BaseLayout seo={post.seo}>
       <div class="flex flex-col gap-8">
-        <div class="-mt-8 -mx-16 h-64">
+        <div class="-mt-8 -mx-4 md:-mx-16 h-48 md:h-64">
           <img
-            class="w-full h-[24rem] object-none"
+            class="w-full md:h-[24rem] md:object-none"
             src={post.coverImage.url}
             alt={post.coverImage.altText} />           
         </div>

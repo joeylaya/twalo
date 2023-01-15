@@ -7,6 +7,7 @@ import { ServicesSection } from "../components/Home/ServicesSection.tsx";
 import { HandlerContext, Handlers, PageProps } from "$fresh/server.ts";
 import { hygraph } from "../hygraph.ts";
 import { GET_RECENT_POST_PREVIEW } from "../graphql/getRecentPostPreview.ts";
+import ChatBot from "../islands/ChatBot.tsx";
 
 export const handler: Handlers = {
   async GET(_req: Request, ctx: HandlerContext) {
@@ -25,11 +26,16 @@ export default function Home(props: PageProps) {
   };
 
   return (
-    <BaseLayout seo={seo}>
-      <HeroSection />
-      <ResourcesSection {...postPreview} />
-      <ServicesSection />
-      <ApproachSection />
-    </BaseLayout>
+    <>
+      <ChatBot />
+      <BaseLayout seo={seo}>
+        <div>
+          <HeroSection />
+          <ResourcesSection {...postPreview} />
+          <ServicesSection />
+          <ApproachSection />        
+        </div>
+      </BaseLayout>    
+    </>
   );
 }

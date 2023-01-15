@@ -17,12 +17,12 @@ export function TrainingsSection() {
   return (
     <section class="relative w-full py-8 items-center flex flex-col gap-8 lg:(flex-row gap-16)">
       <span id="trainings" class="absolute -top-24"></span>
-      <img class="order-last lg:(w-3/5 order-first)" src="/illustrations/group-discussion.svg" alt="" />
+      <img class="order-last lg:(w-1/2 order-first)" src="/illustrations/group-discussion.svg" alt="" />
       <div class="flex flex-col gap-6">
         {trainings.map((training) => (
           <div class="flex flex-col gap-2">
-            <p class="font-display font-bold text-indigo-700 text-2xl md:(text-3xl)">{training.name}</p>
-            <p>{training.description}</p>
+            <p class="font-display font-bold text-indigo-700 text-2xl md:(text-3xl) ">{training.name}</p>
+            <p class="md:text-lg">{training.description}</p>
           </div>
         ))}
       </div>

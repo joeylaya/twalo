@@ -8,11 +8,11 @@ export function ApproachSection() {
           Discover how we can help you create more equitable communities, schools, services, and spaces.
         </p>
         <div class="flex flex-col md:(flex-row) items-center gap-2">
-          <BaseButton style="primary" text="Learn about our approach" />
-          <BaseButton style="secondary" text="Contact us" />
+          <BaseButton style="primary" text="Learn about our approach" href="about#our-approach" />
+          <BaseButton style="secondary" text="Contact us" href="contact" />
         </div>
       </div>
-      <img class="md:(w-3/5 -mr-32)" src="/illustrations/students.svg" alt="" />
+      <img class="md:(w-3/5)" src="/illustrations/students.svg" alt="" />
     </section>
   )
 }

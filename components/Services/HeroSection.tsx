@@ -18,10 +18,10 @@ export function HeroSection() {
         </p>
         <div class="flex flex-col md:(flex-row) items-center gap-2">
           <BaseButton style="primary" text="View trainings" href="#trainings" />
-          <BaseButton style="secondary" text="Contact us" href="./contact" />
+          <BaseButton style="secondary" text="Contact us" href="/contact" />
         </div>
       </div>
-      <img class="h-96 shadow" src="/certificate.png" alt="" />
+      <img class="md:h-96 shadow" src="/certificate.png" alt="" />
     </header>
   )
 }

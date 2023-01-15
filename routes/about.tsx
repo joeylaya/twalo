@@ -13,9 +13,11 @@ export default function About() {
 
   return (
     <BaseLayout seo={seo}>
-      <HeroSection />
-      <ClientCarousel />
-      <FacilitatorSection />
+      <>
+        <HeroSection />
+        <ClientCarousel />
+        <FacilitatorSection />      
+      </>
     </BaseLayout>
   );
 }

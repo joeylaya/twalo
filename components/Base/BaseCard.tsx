@@ -25,14 +25,14 @@ export function BaseCard(props: BaseCardProps) {
         <svg class="fill-current h-16 w-16" viewBox="0 0 100 100" dangerouslySetInnerHTML={{__html: iconPath}}></svg>
       </div>}
       <header>
-        <h2 class={`text-xl md:(text-3xl) text-center font-bold ${
+        <h2 class={`text-2xl md:(text-3xl) text-center font-bold ${
           props.style == "light"
             ? "text-indigo-700"
             : "text-white" }`}>
           {props.title}
         </h2>
       </header>  
-      <p class={`${
+      <p class={`md:text-lg ${
         props.style == "light"
         ? "text-neutral-900"
         : "text-white" }`}>
