@@ -13,10 +13,12 @@ export default function Services() {
 
   return (
     <BaseLayout seo={seo}>
-      <HeroSection />
-      <TrainingsSection />
-      <SpacesSection />
-      <CustomSection />
+      <>
+        <HeroSection />
+        <TrainingsSection />
+        <SpacesSection />
+        <CustomSection />      
+      </>
     </BaseLayout>
   );
 }

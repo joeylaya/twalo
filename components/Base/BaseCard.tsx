@@ -1,6 +1,6 @@
 import { IconPaths, iconPaths } from "../../utils/icons.ts"
 
-interface BaseCardProps {
+export interface BaseCardProps {
   style: "standard" | "dark" | "light",
   width: string,
   title: string,

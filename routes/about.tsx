@@ -1,7 +1,6 @@
-import { Head } from "$fresh/runtime.ts";
 import BaseLayout from "../components/Base/BaseLayout.tsx";
 import { HeroSection } from "../components/About/HeroSection.tsx";
-import {ClientCarousel} from "../components/About/ClientCarousel.tsx";
+import {ClientsSection} from "../components/About/ClientsSection.tsx";
 import { FacilitatorSection } from "../components/About/FacilitatorSection.tsx";
 
 export default function About() {
@@ -15,7 +14,7 @@ export default function About() {
     <BaseLayout seo={seo}>
       <>
         <HeroSection />
-        <ClientCarousel />
+        <ClientsSection />
         <FacilitatorSection />      
       </>
     </BaseLayout>

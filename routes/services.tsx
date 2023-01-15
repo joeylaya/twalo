@@ -1,7 +1,7 @@
 import BaseLayout from "../components/Base/BaseLayout.tsx";
-import { ServiceSection } from "../components/Services/ServiceSection.tsx";
+import { ServiceSection, ServiceSectionProps } from "../components/Services/ServiceSection.tsx";
 
-const services = [
+const services: ServiceSectionProps[] = [
   {
     name: "Training",
     description: "We facilitate focus groups, professional development, and learning spaces, as well as training for young people and adults that motivate, innovate, challenge, and inspire.",

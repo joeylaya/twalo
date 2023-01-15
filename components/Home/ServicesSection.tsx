@@ -1,7 +1,14 @@
+import { IconPaths } from "../../utils/icons.ts"
 import { BaseButton } from "../Base/BaseButton.tsx"
 import { BaseCard } from "../Base/BaseCard.tsx"
 
-const services = [
+interface ServicesProps {
+  slug: keyof IconPaths,
+  name: string,
+  description: string
+}
+
+const services: ServicesProps[] = [
   {
     slug: "training",
     name: "Training",
@@ -27,10 +34,6 @@ const services = [
 export function ServicesSection() {
   return (
     <section class="py-8 flex flex-col gap-6">
-      {/* <header class="flex items-center gap-8 justify-between">
-        <BaseButton style="primary" text="See what we offer" href="about#approach" />
-        <p class="text-xl md:text-3xl">Personalized consulting services for educators, organizations, and communities</p>
-      </header> */}
       <div class="flex flex-col gap-4 justify-center items-center md:(flex-row items-start)">
         {services.map((service) => (
           <a href={service.slug == "training" ? "services/training" : `services#${service.slug}`}>

@@ -45,7 +45,7 @@ export function PostPreview(props: PostPreview) {
           ))}
         </div>}
         <header>
-          <h2 class="text-2xl font-bold font-display text-indigo-600">{props.title}</h2>
+          <h2 class="text-2xl font-bold text-indigo-600">{props.title}</h2>
         </header>
         <div class="flex flex-col gap-4">
           <p class="text-sm">{props.excerpt}</p>

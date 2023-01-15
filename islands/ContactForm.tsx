@@ -112,9 +112,10 @@ export default function ContactForm() {
   }
 
   const MessageBox = () => {
-    const handleInput = (e) => {
+    const handleInput = (e: Event) => {
       const update = formData
-      update.message = e.target.value
+      const target = e.target as HTMLTextAreaElement
+      update.message = target.value
       updateFormData(update)
     }
 
@@ -126,19 +127,22 @@ export default function ContactForm() {
   }
 
   const ContactInfo = () => {
-    const handleEmailInput = (e) => {
+    const handleEmailInput = (e: Event) => {
       const update = formData
-      update.contact.email = e.target.value
+      const target = e.target as HTMLInputElement
+      update.contact.email = target.value
       updateFormData(update)
     }
-    const handleFirstNameInput = (e) => {
+    const handleFirstNameInput = (e: Event) => {
       const update = formData
-      update.contact.name.first = e.target.value
+      const target = e.target as HTMLInputElement
+      update.contact.name.first = target.value
       updateFormData(update)
     }
-    const handleLastNameInput = (e) => {
+    const handleLastNameInput = (e: Event) => {
       const update = formData
-      update.contact.name.last = e.target.value
+      const target = e.target as HTMLInputElement
+      update.contact.name.last = target.value
       updateFormData(update)
     }
 

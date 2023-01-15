@@ -1,6 +1,13 @@
+import { IconPaths } from "../../utils/icons.ts"
 import { BaseCard } from "../Base/BaseCard.tsx"
 
-const spaces = [
+interface SpacesProps {
+  icon: keyof IconPaths,
+  name: string,
+  description: string
+}
+
+const spaces: SpacesProps[] = [
   {
     "name": "Schools & Universities",
     "description": "for faculty/staff and district administrators who wish to learn more about the challenges facing LGBTQ+ youth and how to create a safer and more supportive school environment",

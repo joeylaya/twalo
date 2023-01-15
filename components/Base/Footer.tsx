@@ -1,7 +1,3 @@
-import { HandlerContext, Handlers, PageProps } from "$fresh/server.ts";
-import { hygraph } from "../../hygraph.ts";
-import { GET_RECENT_POST_LINKS } from "../../graphql/getRecentPostLinks.ts";
-
 const siteMap = [
   {
     header: {

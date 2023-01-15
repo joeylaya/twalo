@@ -1,7 +1,6 @@
 import { BaseButton } from "../Base/BaseButton.tsx";
-import { BaseCard } from "../Base/BaseCard.tsx";
 
-interface ServiceSectionProps {
+export interface ServiceSectionProps {
   name: string,
   description: string,
   illustration: string,

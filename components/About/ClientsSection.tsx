@@ -1,6 +1,6 @@
 const clients = ["vivipary", "storyset", "vivipary", "storyset"]
 
-export function ClientCarousel() {
+export function ClientsSection() {
 
   return (
     <section class="relative py-16 w-full flex flex-col gap-8 items-center">

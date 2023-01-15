@@ -1,6 +1,5 @@
 import { Handlers } from "$fresh/server.ts";
 import { sendinblue } from "../../sendinblue.ts";
-// import { env } from "../../env.ts";
 
 export interface NewMessageEmailParams {
   "services": string
@@ -14,7 +13,6 @@ export const handler: Handlers = {
   async POST(req) {
     const params: NewMessageEmailParams = await req.json()
 
-    // const apiKey = env.EMAIL_API
     const apiKey =   Deno.env.get("CONTENT_API")!
 
     const sendSmtpEmail = {

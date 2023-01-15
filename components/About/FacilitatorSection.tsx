@@ -6,7 +6,7 @@ export function FacilitatorSection() {
         <div class="flex flex-col gap-4">
           <img src="/elita_laya.png" alt="" />
           <div>
-            <p class="text-indigo-500 font-display font-bold text-2xl md:text-4xl">Elita Laya, M.A.</p>
+            <h2 class="text-indigo-500 font-bold text-2xl md:text-4xl">Elita Laya, M.A.</h2>
             <p class="text-indigo-800 font-bold text-lg md:text-2xl">they/them</p>
           </div>
         </div>
