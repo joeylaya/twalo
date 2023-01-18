@@ -1,4 +1,5 @@
 import BaseLayout from "../components/Base/BaseLayout.tsx";
+import ContactForm from "../islands/ContactForm.tsx"
 
 export default function Services() {
   const seo = {
@@ -7,11 +8,17 @@ export default function Services() {
     keywords: [],
   };
 
-  return (
-    <BaseLayout seo={seo}>
+  const Fallback = () => {
+    return (
       <div>
         Please send us an email at create@vivipary.org. We look forward to connecting soon!
       </div>
+    )
+  }
+
+  return (
+    <BaseLayout seo={seo}>
+      <ContactForm />
     </BaseLayout>
   );
 }
