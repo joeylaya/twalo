@@ -114,9 +114,7 @@ export default function ContactForm() {
           {servicesOptions.map((service) => (
             <label
               for={service.id}
-              class={`
-                  bg-white py-2 px-4 md:p-6 rounded-2xl flex md:flex-col gap-4 items-center shadow transform transition-colors ease-in-out duration-300
-                `}
+              class="cursor-pointer bg-white py-2 px-4 md:p-6 rounded-2xl flex md:flex-col gap-4 items-center shadow transform transition-colors ease-in-out duration-300"
             >
               <input
                 type="checkbox"
