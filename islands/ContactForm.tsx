@@ -90,7 +90,7 @@ export default function ContactForm() {
     };
     const servicesList = [];
     for (const service in services) {
-      if (service) servicesList.push(service);
+      if (services[service as Service]) servicesList.push(service);
     }
     params.services = convertArrayToList(servicesList);
 
