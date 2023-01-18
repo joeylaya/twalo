@@ -79,7 +79,7 @@ export default function ContactForm() {
     if (valid) setValidated(true);
   };
 
-  const handleSubmit = async (e: Event) => {
+  const handleSubmit = (e: Event) => {
     e.preventDefault();
     const params: NewMessageEmailParams = {
       services: "",
@@ -94,16 +94,17 @@ export default function ContactForm() {
     }
     params.services = convertArrayToList(servicesList);
 
-    const res = await fetch(`/api/newMessageEmail`, {
-      method: "POST",
-      body: JSON.stringify(params),
-    });
+    console.log(params)
+    // const res = await fetch(`/api/newMessageEmail`, {
+    //   method: "POST",
+    //   body: JSON.stringify(params),
+    // });
 
-    if (res.ok) {
-      setStatus("success")
-    } else {
-      setStatus("error")
-    }
+    // if (res.ok) {
+    //   setStatus("success")
+    // } else {
+    //   setStatus("error")
+    // }
   };
 
   const FormPage = () => {
@@ -121,6 +122,7 @@ export default function ContactForm() {
                 id={service.id}
                 name="services"
                 value={service.id}
+                checked={services[service.id]}
                 onChange={(e) => handleCheckbox(e)}
                 class="hidden"
               />
