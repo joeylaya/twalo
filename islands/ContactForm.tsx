@@ -46,8 +46,8 @@ export default function ContactForm() {
 
   const initialValidations: Record<ContactInfo, boolean> = {
     email: false,
-    firstName: true,
-    lastName: true,
+    firstName: false,
+    lastName: false,
   };
 
   const [services] = useState(initialServices);
@@ -100,11 +100,9 @@ export default function ContactForm() {
     });
 
     if (res.ok) {
-      setStatus("success");
-      console.log("success");
+      setStatus("success")
     } else {
-      setStatus("error");
-      console.log("error");
+      setStatus("error")
     }
   };
 
