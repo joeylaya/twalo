@@ -1,4 +1,4 @@
-import BaseLayout from "../components/Base/BaseLayout.tsx"
+import BaseLayout from "../components/Base/BaseLayout.tsx";
 import ContactForm from "../islands/ContactForm.tsx";
 
 export default function Services() {

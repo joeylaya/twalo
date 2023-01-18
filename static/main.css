@@ -20,3 +20,35 @@ li {
   display: list-item;
   padding: 0.5rem 0;
 }
+
+input ~ p {
+  color: #9ca3af;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+input:checked ~ p {
+  color: #4f46e5
+}
+
+svg {
+  fill: #9ca3af
+}
+
+label input:checked + svg {
+  fill: #4f46e5
+}
+
+label, legend {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
