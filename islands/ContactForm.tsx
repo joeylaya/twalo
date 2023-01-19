@@ -94,17 +94,16 @@ export default function ContactForm() {
     }
     params.services = convertArrayToList(servicesList);
 
-    console.log(params)
-    // const res = await fetch(`/api/newMessageEmail`, {
-    //   method: "POST",
-    //   body: JSON.stringify(params),
-    // });
+    const res = await fetch(`/api/newMessageEmail`, {
+      method: "POST",
+      body: JSON.stringify(params),
+    });
 
-    // if (res.ok) {
-    //   setStatus("success")
-    // } else {
-    //   setStatus("error")
-    // }
+    if (res.ok) {
+      setStatus("success")
+    } else {
+      setStatus("error")
+    }
   };
 
   const FormPage = () => {
