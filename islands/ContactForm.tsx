@@ -52,7 +52,7 @@ export default function ContactForm() {
 
   const [services] = useState(initialServices);
   const [message, setMessage] = useState("");
-  const [contact] = useState(initialContact);
+  const [contact] = useState(initialContact;);
   const [validations] = useState(initialValidations);
   const [validated, setValidated] = useState(false);
   const [status, setStatus] = useState(
@@ -75,7 +75,7 @@ export default function ContactForm() {
     let valid = true;
     for (const info in validations) {
       if (!validations[info as ContactInfo]) valid = false;
-    }
+    };
     if (valid) setValidated(true);
   };
 
