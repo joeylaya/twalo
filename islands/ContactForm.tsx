@@ -79,7 +79,7 @@ export default function ContactForm() {
     if (valid) setValidated(true);
   };
 
-  const handleSubmit = (e: Event) => {
+  const handleSubmit = async (e: Event) => {
     e.preventDefault();
     const params: NewMessageEmailParams = {
       services: "",
