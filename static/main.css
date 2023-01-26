@@ -52,3 +52,60 @@ form {
   gap: 2rem;
 }
 
+.hero {
+	-webkit-animation: hero 1s cubic-bezier(.5,0,0.25,1) both;
+	        animation: hero 1s cubic-bezier(.5,0,0.25,1) both;
+}
+ @-webkit-keyframes hero {
+  0% {
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes hero {
+  0% {
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navbar {
+	-webkit-animation: navbar 1.5s cubic-bezier(.5,0,0.25,1) both;
+	        animation: navbar 1.5s cubic-bezier(.5,0,0.25,1) both;
+}
+ @-webkit-keyframes navbar {
+  0% {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes navbar {
+  0% {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}

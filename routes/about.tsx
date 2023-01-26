@@ -14,7 +14,7 @@ export default function About() {
     <BaseLayout seo={seo}>
       <>
         <HeroSection />
-        <ClientsSection />
+        {/* <ClientsSection /> */}
         <FacilitatorSection />      
       </>
     </BaseLayout>

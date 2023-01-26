@@ -35,7 +35,7 @@ export default function BaseLayout(props: BaseLayoutProps) {
       </Head>
       <div>
         <NavBar />
-        <main class="flex flex-col items-center px-4 pt-24 pb-8 md:(px-16 pt-32 pb-4)">
+        <main class="hero flex flex-col items-center px-4 pt-24 pb-8 md:(px-16 pt-32 pb-4)">
           {props.children}
         </main>
         <Footer />
