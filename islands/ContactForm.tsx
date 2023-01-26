@@ -75,11 +75,11 @@ export default function ContactForm() {
     let valid = true;
     for (const info in validations) {
       if (!validations[info as ContactInfo]) valid = false;
-    }
+    };
     if (valid) setValidated(true);
   };
 
-  const handleSubmit = (e: Event) => {
+  const handleSubmit = async (e: Event) => {
     e.preventDefault();
     const params: NewMessageEmailParams = {
       services: "",
@@ -91,20 +91,19 @@ export default function ContactForm() {
     const servicesList = [];
     for (const service in services) {
       if (services[service as Service]) servicesList.push(service);
-    }
+    };
     params.services = convertArrayToList(servicesList);
 
-    console.log(params)
-    // const res = await fetch(`/api/newMessageEmail`, {
-    //   method: "POST",
-    //   body: JSON.stringify(params),
-    // });
+    const res = await fetch(`/api/newMessageEmail`, {
+      method: "POST",
+      body: JSON.stringify(params),
+    });
 
-    // if (res.ok) {
-    //   setStatus("success")
-    // } else {
-    //   setStatus("error")
-    // }
+    if (res.ok) {
+      setStatus("success")
+    } else {
+      setStatus("error")
+    }
   };
 
   const FormPage = () => {
