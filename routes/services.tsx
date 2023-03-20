@@ -35,6 +35,11 @@ export default function Services() {
     title: "Twalo: Educational Consulting for Youth Liberation",
     description: "",
     keywords: [],
+    image: {
+      id: "",
+      url: "logo.svg",
+      altText: "Twalo Logo"
+    }
   };
 
   return (

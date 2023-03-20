@@ -17,7 +17,12 @@ export default function Blog(props: PageProps) {
   const seo = {
     title: "Twalo Blog",
     description: "",
-    keywords: []
+    keywords: [],
+    image: {
+      id: "",
+      url: "logo.svg",
+      altText: "Twalo Logo"
+    }
   }
 
   return (

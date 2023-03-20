@@ -11,6 +11,8 @@
     "sib-api-v3-typescript": "https://esm.sh/sib-api-v3-typescript@2.2.2",
     "sib-api-v3-typescript/": "https://esm.sh/sib-api-v3-typescript@2.2.2/",
     "graphql-request": "https://deno.land/x/graphql_request@v4.1.0",
-    "graphql_request/": "https://deno.land/x/graphql_request@v4.1.0/"
+    "graphql_request/": "https://deno.land/x/graphql_request@v4.1.0/",
+    "is-plain-obj": "https://esm.sh/v102/is-plain-obj@4.1.0/deno/is-plain-obj.js",
+    "is-plain-obj/": "https://esm.sh/v102/is-plain-obj@4.1.0/deno/is-plain-obj.js/"    
   }
 }
