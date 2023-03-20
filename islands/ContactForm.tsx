@@ -75,7 +75,7 @@ export default function ContactForm() {
     let valid = true;
     for (const info in validations) {
       if (!validations[info as ContactInfo]) valid = false;
-    };
+    }
     if (valid) setValidated(true);
   };
 
@@ -91,7 +91,7 @@ export default function ContactForm() {
     const servicesList = [];
     for (const service in services) {
       if (services[service as Service]) servicesList.push(service);
-    };
+    }
     params.services = convertArrayToList(servicesList);
 
     const res = await fetch(`/api/newMessageEmail`, {

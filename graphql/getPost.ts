@@ -29,6 +29,11 @@ export const GET_POST = gql`
         title
         description
         keywords
+        image {
+          id
+          url
+          altText
+        }
       }
     }
   }
