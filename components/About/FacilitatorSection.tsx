@@ -2,7 +2,7 @@ export function FacilitatorSection() {
   return (
     <section class="mt-16 flex justify-center relative">
       <span id="facilitator" class="absolute -top-16"></span>
-      <div class="bg-white shadow rounded-2xl p-8 flex flex-col gap-8 md:(flex-row)">
+      <div class="bg-white shadow rounded-3xl p-8 flex flex-col gap-8 md:(flex-row)">
         <div class="flex flex-col gap-4 items-center">
           <img class="max-w-[52rem]" src="/elita_laya.png" alt="" />
         </div>
