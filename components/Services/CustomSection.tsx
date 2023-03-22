@@ -8,7 +8,7 @@ export function CustomSection() {
           Don’t see what you’re looking for? Just let us know! We can design a training to fit your specific needs.
         </p>
         <div class="flex flex-col md:(flex-row) items-center gap-2">
-          <BaseButton style="primary" text="Contact us" />
+          <BaseButton style="primary" text="Contact us" href="contact" />
         </div>
       </div>
       <img class="md:w-1/3" src="/illustrations/teaching.svg" alt="" />

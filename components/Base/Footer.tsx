@@ -34,10 +34,6 @@ const siteMap = [
         name: "Our Approach"
       },
       {
-        slug: "about#past-clients",
-        name: "Past Clients"
-      },
-      {
         slug: "about#facilitator",
         name: "Facilitator"
       }

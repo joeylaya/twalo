@@ -11,7 +11,7 @@ export function FacilitatorSection() {
             <h2 class="text-indigo-500 font-bold text-3xl md:text-5xl">elita laya, m.a.</h2>
             <p class="text-indigo-800 font-bold text-lg md:text-2xl">they/them</p>
           </div>
-          <div class="flex flex-col gap-4">        
+          <div class="flex flex-col gap-4 max-w-[600px]">        
             <p> elita (they) is a Black, queer, trans, and nonbinary scholar-activist. elita is
                 committed to demanding more than minimal from our research, institutions,
                 organizations, and individuals.
